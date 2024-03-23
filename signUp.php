@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form login dan registrasi</title>
         <link rel="stylesheet" href="signUp.css">
+        <link rel="icon" type="image/x-icon" href="gambar/favicon.png">
     </head>
     <body>   
-        <div>
+        <div class="ContentWraper">
+            <?php 
+              include "navbar.php";
+             ?>
             <div class="container">
             <input type="checkbox"  id="check">
              
@@ -21,19 +25,21 @@
                          <input type="text" placeholder="LAST NAME">
                          <input type="text" placeholder="EMAIL ADDRESS">
                          <input type="text" placeholder="PASSWORD">
-                         <input type="button" value="SIGN UP" class="button">
+                         <a href="index.php" class="button">SIGN UP</a>
                         </form>
                     </div>            
-            </div>
-                
-                <div class="wrapper">
                     <div class="login form">
                         <h1>LOGIN</h1>
                         <h4>HAVE AN ACCOUNT?</h4>
                         <p>Please provide the email address and password associated with the account. 
                             If you're having trouble, please use the prompt below to reset your password.</p>
-                            <input type="button" value="PROCEED TO LOGIN" class="button">
+                            <a href= "Login.php"  class="button">
+                      PROCEED TO LOGIN
+                    </a>
+                   </div>
                     </div>
-                </div>
+                <?php 
+              include "footer.php";
+             ?>
         </div>
     </body>

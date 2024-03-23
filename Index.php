@@ -1,7 +1,3 @@
-<?php 
- include "navbar.php";
- ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,54 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LandingPage.css" />
     <title>stainless.com</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="gambar/favicon.png">
     <script src="https://kit.fontawesome.com/5e57207f98.js" crossorigin="anonymous"></script>
 </head>
- <body>
+<body>
   <!--Header--> 
-  <div class="ContentWraper">
+ <div class="ContentWraper">
+  <?php 
+ include "navbar.php";
+ ?>
   <!--end header-->
-   <div class="container">
-    <div class="slideshow">
-      <img src="image1.jpg">
-      <img src="image2.webp">
-    </div>
+  <div class="container">
+   <div class="slideshow">
+    <img src="gambar/image1.jpg">
+    <img src="gambar/image2.webp">
    </div>
-   <div class="altCol">
-    <div class="altWomens">
-     <p>
-      <a href="/"><img src="altWomens.jpg" alt="img"/>
-      </a>
-     </p>
-     <a href="/" class="button-Womens" style="position: absolute;">
-      <div>
-       <h4>All Women's</h4>
-      </div>
-     </a>
-    </div>
-    <div class="altAcc">
-     <p>
-      <a href="/"><img src="altAcc.jpg" alt="img"/>
-      </a>
-     </p>
-     <a href="/" class="button-Acc" style="position: absolute;">
-      <div>
-       <h4>All Accessories</h4>
-      </div>
-     </a> 
-    </div>
-    <div class="altMens">
-     <p>
-      <a href="/"><img src="altMens.jpg" alt="img"/>
-      </a>
-     </p>
-     <a href="/" class="button-Mens" style="position: absolute;">
-      <div>
-       <h4>All Men's</h4>
-      </div>
-     </a> 
-    </div>
-   </div>
+  </div>
+
+
+  <div class="altCol">
+   <a href="/">
+     <div class="altContainer">
+      <img src="gambar/altWomens.jpg" alt="img" class="alter" >
+       <button class="altButton">All Women's</button>
+     </div>
+   </a> 
+   <a href="/">
+     <div class="altContainer">
+      <img src="gambar/altAcc.jpg" alt="img" class="alter" >
+      <button class="altButton">All Women's</button>
+     </div>
+   </a>
+   <a href="/">
+     <div class="altContainer">
+      <img src="gambar/altMens.jpg" alt="img" class="alter" >
+      <button class="altButton">All Women's</button>
+     </div> 
+    </a>
+   </div> 
+
+
    <div class="sellWarp">
     <div class="bestSell">
      <h1> BEST SELLING </h1>
@@ -64,29 +52,29 @@
    </div>
    <div class="itemsWarp">
     <div class="item1">
-     <a href="/"><img src="Mens2Front.webp" onmouseover="this.src='Mens2Back.webp';" onmouseout="this.src='Mens2Front.webp';"/></a>
+     <a href="/"><img src="gambar/Mens2Front.webp" onmouseover="this.src='gambar/Mens2Back.webp';" onmouseout="this.src='gambar/Mens2Front.webp';"/></a>
      <p1 class="T1">PRODUCT NAME 35"</p1>
      <p2 class="T2">Rp.150.000</p2>
     </div> 
     <div class="item2">
-     <a href="/"><img src="Womens1Front.webp" onmouseover="this.src='Womens1Back.webp';" onmouseout="this.src='Womens1Front.webp';"/></a>
+     <a href="/"><img src="gambar/Womens1Front.webp" onmouseover="this.src='gambar/Womens1Back.webp';" onmouseout="this.src='gambar/Womens1Front.webp';"/></a>
      <p1 class="T1">PRODUCT NAME 35"</p1>
      <p2 class="T2">Rp.150.000</p2>
     </div> 
     <div class="item3">
-     <a href="/"><img src="Mens1Front.webp" onmouseover="this.src='Mens1Back.webp';" onmouseout="this.src='Mens1Front.webp';"/></a>
+     <a href="/"><img src="gambar/Mens1Front.webp" onmouseover="this.src='gambar/Mens1Back.webp';" onmouseout="this.src='gambar/Mens1Front.webp';"/></a>
      <p1 class="T1">PRODUCT NAME 35"</p1>
      <p2 class="T2">Rp.150.000</p2>
     </div> 
     <div class="item4">
-     <a href="/"><img src="Womens2Front.webp" onmouseover="this.src='Womens2Back.webp';" onmouseout="this.src='Womens2Front.webp';"/></a>
+     <a href="/"><img src="gambar/Womens2Front.webp" onmouseover="this.src='gambar/Womens2Back.webp';" onmouseout="this.src='gambar/Womens2Front.webp';"/></a>
      <p1 class="T1">PRODUCT NAME 35"</p1>
      <p2 class="T2">Rp.150.000</p2>
    </div> 
   </div>
-  <div class="footer">
-
-  </div>
+  <?php 
+ include "footer.php";
+ ?>
  </div> 
 </body>
 </html>

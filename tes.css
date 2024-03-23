@@ -1,0 +1,222 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;  
+   }
+   
+   /* header */ 
+   .ContentWraper {
+    align-items:normal;
+    width: 100%;
+    height: 430vh;
+    background-color:rgb(255, 255, 255) ;  
+   
+   }
+
+   /*.altCol {
+    width: 100%;
+    height: auto;
+    display:inline-flex;
+    align-content: space-between;
+   }
+   
+   .altWomens {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    height: auto;
+   }
+   
+   .altWomens > a > img :hover {
+    display: flex;
+    justify-content: center;
+    align-items:center;    
+    width: 99%;
+    height: auto; 
+    border:3px solid #000;
+    transition: all.0s ease-in;
+   }
+   
+   .altAcc {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    height: auto;
+   }
+   
+   .altAcc > p :hover {
+    display: flex;
+    justify-content: center;
+    align-items:center;     
+    width: 99%;
+    height: auto;
+    border:3px solid #000;
+    transition: all.0s ease-in;
+   }
+   
+   .altMens {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    height: auto;
+   }
+   
+   .altMens > p :hover {
+    display: flex;
+    justify-content: center;
+    align-items:center;     
+    width: 99%;
+    height: auto;
+    border:3px solid #000;
+    transition: all.0s ease-in;
+   }
+   
+   .button-Womens {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 0.1px solid #ffffff46;
+    color: #ffffff;
+    width: 175px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 4px;
+    margin-top: 450px;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   
+   .button-Womens {
+    color: #ffffff;
+    text-decoration: none;
+   }
+   
+   .altWomens:hover {
+    .button-Womens {    
+      font-size: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.542);
+      border: 0.1px solid #000046;
+      color: #000;
+   }  
+   }
+   
+   .button-Acc {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 0.1px solid #ffffff46;
+    color: #ffffff;
+    width: 175px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 4px;
+    margin-top: 450px;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   
+   .button-Acc {
+    color: #ffffff;
+    text-decoration: none;
+   }
+   
+   .altAcc:hover {
+     .button-Acc {    
+       font-size: 23px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgba(255, 255, 255, 0.542);
+       border: 0.1px solid #000046;
+       color: #000;
+   }  
+   }
+   
+   .button-Mens {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 0.1px solid #ffffff46;
+    color: #ffffff;
+    width: 175px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 4px;
+    margin-top: 450px;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   
+   .button-Mens {
+    color: #ffffff;
+    text-decoration: none;
+   }
+   
+   .altMens:hover{
+    .button-Mens{    
+      font-size: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.542);
+      border: 0.1px solid #000046;
+      color: #000;
+   }  
+   }*/
+
+   .altCol {
+    display: flex;
+  }
+  
+  .altContainer{
+    transition: transform 0s ease;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .alter {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .altContainer:hover {
+    transform: scale(1);
+    border: 2px solid #333;
+  }
+
+
+    .altButton {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        padding: 2vw 4vw;
+        background-color: rgba(0, 0, 0, 0.521);
+        border: 0.1px solid #ffffffa0;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 1.1vw;
+        cursor: pointer;
+      } 
+
+.altContainer:hover .altButton{
+    background-color: rgba(255, 255, 255, 0.542);
+    border: 0.1px solid #000046;
+    color: #000;
+}
