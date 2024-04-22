@@ -23,13 +23,21 @@
 
    include "connect.php";
 
-  $sql = "SELECT * FROM container";
+  $sql = "SELECT * FROM container WHERE idContainer=3";
   $result = mysqli_query($conn, $sql);
     
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-      echo '<img src="gambar/' . $row['Container1'] . '">';
-      echo '<img src="gambar/' . $row['Container2'] . '">';
+      echo '<img src="gambar/' . $row['Container'] . '">';
+  }
+
+
+  $sql = "SELECT * FROM container WHERE idContainer=2";
+  $result = mysqli_query($conn, $sql);
+    
+  if (mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+      echo '<img src="gambar/' . $row['Container'] . '">';
   }
 
   mysqli_close($conn);
@@ -39,22 +47,22 @@
   </div>
 
   <div class="altCol">
-    <a href="/">
+    <a href="allWomens.php">
       <div class="altContainer">
         <img src="gambar/altWomens.jpg" alt="img" class="alter" >
         <button class="altButton">All Women's</button>
       </div>
     </a> 
-    <a href="/">
+    <a href="allAcc.php">
       <div class="altContainer">
         <img src="gambar/altAcc.jpg" alt="img" class="alter" >
-        <button class="altButton">All Women's</button>
+        <button class="altButton">All Accesories</button>
       </div>
     </a>
-    <a href="/">
+    <a href="allMens.php">
       <div class="altContainer">
         <img src="gambar/altMens.jpg" alt="img" class="alter" >
-        <button class="altButton">All Women's</button>
+        <button class="altButton">All Men's</button>
       </div> 
     </a>
   </div> 
@@ -69,59 +77,58 @@
 <?php
 
   include "connect.php";
-
-  $sql = "SELECT * FROM product1";
+  $sql = "SELECT * FROM product WHERE idProduct=1";
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-      echo '<div class="item1">';
-      echo '<a href="/"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
+      echo '<div class="item">';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
       echo '<div class="textItems">';
-      echo '<a href="/" class="T1">' . $row['name'] . '</a>';
-      echo '<a href="/" class="T2">Rp.' . $row['price'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T1">' . $row['name'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T2">Rp.' . $row['price'] . '</a>';
       echo '</div>';
       echo '</div>';
   }
 
-  $sql = "SELECT * FROM product2";
+  $sql = "SELECT * FROM product WHERE idProduct=5";
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-      echo '<div class="item2">';
-      echo '<a href="/"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
+      echo '<div class="item">';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
       echo '<div class="textItems">';
-      echo '<a href="/" class="T1">' . $row['name'] . '</a>';
-      echo '<a href="/" class="T2">Rp.' . $row['price'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T1">' . $row['name'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T2">Rp.' . $row['price'] . '</a>';
       echo '</div>';
       echo '</div>';
   }
 
-  $sql = "SELECT * FROM product3";
+  $sql = "SELECT * FROM product WHERE idProduct=2";
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-      echo '<div class="item3">';
-      echo '<a href="/"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
+      echo '<div class="item">';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
       echo '<div class="textItems">';
-      echo '<a href="/" class="T1">' . $row['name'] . '</a>';
-      echo '<a href="/" class="T2">Rp.' . $row['price'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T1">' . $row['name'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T2">Rp.' . $row['price'] . '</a>';
       echo '</div>';
       echo '</div>';
   }
 
-  $sql = "SELECT * FROM product4";
+  $sql = "SELECT * FROM product WHERE idProduct=6";
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-      echo '<div class="item4">';
-      echo '<a href="/"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
+      echo '<div class="item">';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '"><img src="gambar/' . $row['imageFront'] . '" onmouseover="this.src=\'gambar/' . $row['imageBack'] . '\';" onmouseout="this.src=\'gambar/' . $row['imageFront'] . '\';"/></a>';
       echo '<div class="textItems">';
-      echo '<a href="/" class="T1">' . $row['name'] . '</a>';
-      echo '<a href="/" class="T2">Rp.' . $row['price'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T1">' . $row['name'] . '</a>';
+      echo '<a href="detail.php?jenis=' . $row['jenis'] . '&id=' . $row['idProduct'] . '&name=' . $row['name'] . '&price=' . $row['price'] . '&i1=' . $row['imageFront'] . '&i2=' . $row['imageBack'] . '&i3=' . $row['imageLeft'] . '&i4=' . $row['imageRight'] . '" class="T2">Rp.' . $row['price'] . '</a>';
       echo '</div>';
       echo '</div>';
   }

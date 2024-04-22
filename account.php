@@ -14,7 +14,6 @@
     include "navbar.php";
 
 ?>
-    <h2>Account Details</h2>
 <?php
 
     include "connect.php";
@@ -27,14 +26,26 @@
         $email = $_SESSION['email'];
         $sql = "SELECT * FROM users WHERE email='$email'";
         $result = mysqli_query($conn, $sql);
+        echo '<nav class="anWrapper">';
+        echo '<div class="an">';
+        echo '<li><p>ACCOUNT DETAILS</p></li>';   
+        echo '<li><a href="addreses.php">ADDRESSES</a></li>';  
+        echo '</div>';
+        echo '<div class="anSignout">';
+        $row = mysqli_fetch_assoc($result);
+        echo '<p class="T1">' . $row['email'] . '</p>';
+        echo '<p><a href="logout.php">SIGN OUT</a></p>';
+        echo '</div>';
+        echo '</nav>';
+        echo '<div class="content">';
+        echo '<div class="tag">';
+        echo '<h2>ACCCOUNT DETAILS</h2>';
+        echo '</div>';
+        echo '<div class="nm">'; 
 
         if (mysqli_num_rows($result) > 0) {
-            $row = mysqli_fetch_assoc($result);
-            echo "email: " . $row['email'] . "<br>";
-            echo "Name: " . $row['firstname'] . " ". $row['lastname'] . "<br>";
-            echo "<h3>Change Password</h3>";
-            echo "<p><a href='logout.php'>Logout</a></p>";
-            echo "</form>";
+            echo '<p>' . $row['firstname'] . ' ' . $row['lastname'] . '</p>';
+            echo $row['email'] . "<br>";
         } else {
             echo "User not found.";
     }
@@ -42,10 +53,13 @@
     mysqli_close($conn);
 
     } else {
+            echo '<div class="not">';
             echo "You are not logged in.";
+            echo '</div>';
     }
-
 ?>
+</div>
+</div>
 <?php
 
     include "footer.php";

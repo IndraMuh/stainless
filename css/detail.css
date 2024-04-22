@@ -1,0 +1,231 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;  
+}
+
+/* header */ 
+.ContentWraper {
+  align-items:normal;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(255, 255, 255) ;  
+  
+}
+
+/* end header */
+
+   .tagCon{
+    width: auto;
+    margin-top: 2vw;
+   }
+   .tag{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    justify-content: left;
+  }
+  
+  .tag1{
+    margin-left: 7vw;
+    font-size: 1vw;
+    font-weight: 100;
+  }
+
+.con{
+    width: auto;
+    margin-top: 2vw;
+}
+
+.detail{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.slides{
+ width: 32%;
+ position: relative;
+}
+
+.slides .slide{
+ display: none;
+}
+
+.slides .slide > img{
+ width: 100%;
+
+}
+
+.slides .navigation{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+
+.slides .navigation .prev, .slides .navigation .next{
+ cursor:pointer;
+ padding: 16px;
+ font-weight: bold;
+ font-size: 20px;
+ color: white;
+ background: rgba(0,0,0,0.2);
+ user-select: none;
+ transition: 0.5s ease;
+}
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+ background: rgba(0,0,0,1);
+}
+
+@keyframes fade {
+ from{opacity: 0.3;}
+ to{opacity: 1}
+}
+
+.tail{
+    width: 40vw;
+}
+.tittle{
+ padding-left: 3vw;
+}
+
+.T1{
+ font-size:2vw ;
+
+}
+
+.T2{
+ padding-top: 1vw;
+ font-weight: lighter;
+ font-size: 1.5vw;
+}
+
+.reCon{
+  width: auto;
+  margin-top: 6vw;
+}
+.re{
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}
+
+.recom{
+  margin-left: 4vw;
+  font-size: 2vw;
+ }
+
+ .itemsCon {
+  width: auto;
+  height: 45vw;
+  justify-content: center;
+}
+.itemsWarp{
+  justify-content: space-between;
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.textItems{
+  justify-content: space-between;
+  display: flex;
+}
+.t1 {
+  font-size: 1.2vw;
+  justify-content: left;
+  text-decoration: none;
+  color: #000000;
+}
+
+.t2 {
+  font-size: 1.3vw;
+  font-weight: bold;  
+  justify-content: right; 
+  text-decoration: none;
+  color: #000000;
+}
+
+.item{
+
+  width: 21.3vw;
+  margin-top: 3%;
+  margin-right: 1%;
+  margin-left: 1%;
+
+}
+.item > a > img {
+  width: 21.3vw;
+  height: 27.7vw;  
+}
+
+.conDesc{
+ 
+}
+.backDesc{
+  padding-top: 1vw;
+  font-size: 1.1vw;
+}
+.compDesc{
+  padding-top: 1.5vw;
+  font-size: 1.1vw;
+}
+.sizeDesc{
+  padding-top: 1.5vw;
+  font-size: 1.1vw;
+  padding-bottom: 1.5vw;
+}
+
+.sizeSelector>button{
+ cursor: pointer;
+ width: 3vw;
+ height: 2vw;
+ color: #00000056;
+ background-color: #ffffff;
+ border: 0.1vw solid #00000056;
+
+}
+
+.sizeSelector>button:hover{
+ cursor: pointer;
+ width: 3vw;
+ height: 2vw;
+ color: #000000;
+ background-color: #ffffff;
+ border: 0.1vw solid #000000;
+
+}
+
+.sizeButton.selected {
+  background-color: #000000;
+  color: #fff;
+}
+.sizeButton.selected:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.btnCon{
+  padding-top: 1.5vw;
+}
+.add{
+  cursor: pointer;
+  font-size:1vw;
+  width: 9vw;
+  height: 3vw;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 0.5vw;
+}
+.add:hover{
+  color: #ffffff;
+  background-color: #323232;
+
+}

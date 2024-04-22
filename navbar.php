@@ -15,9 +15,9 @@ echo '<!DOCTYPE html>
 <body>  
 <nav class="navWrapper">
     <div class="navText">
-        <li><a href="/">MENS</a></li>   
-        <li><a href="/">WOMENS</a></li>   
-        <li><a href="/">ACCESSORIES</a></li>    
+        <li><a href="allMens.php">MENS</a></li>   
+        <li><a href="allWomens.php">WOMENS</a></li>   
+        <li><a href="allAcc.php">ACCESSORIES</a></li>    
     </div>
     <div class="logo">        
         <p><a href="Index.php"><img src="gambar/logo.png" alt="logo"/></a></p>
@@ -25,7 +25,7 @@ echo '<!DOCTYPE html>
     <div class="navIcon">
         <li><a href="/"><i class="fa-solid fa-magnifying-glass" style="color: #fff;"></i></a></li>
         <li><a href="account.php"><i class="fa-regular fa-user" style="color: #fff;"></i></a></li>
-        <li><a href="/"><i class="fa-solid fa-bag-shopping" style="color: #fff;"></i></a></li>
+        <li><a href="cart.php"><i class="fa-solid fa-bag-shopping" style="color: #fff;"></i></a></li>
     </div> 
 </nav>
 </body>
@@ -44,9 +44,9 @@ echo '<!DOCTYPE html>
 <body>        
 <nav class="navWrapper">
     <div class="navText">
-        <li><a href="/">MENS</a></li>   
-        <li><a href="/">WOMENS</a></li>   
-        <li><a href="/">ACCESSORIES</a></li>    
+        <li><a href="allMens.php">MENS</a></li>   
+        <li><a href="allWomens.php">WOMENS</a></li>   
+        <li><a href="allAcc.php">ACCESSORIES</a></li>    
     </div>
     <div class="logo">        
         <p><a href="Index.php"><img src="gambar/logo.png" alt="logo"/></a></p>
@@ -54,7 +54,7 @@ echo '<!DOCTYPE html>
     <div class="navIcon">
         <li><a href="/"><i class="fa-solid fa-magnifying-glass" style="color: #fff;"></i></a></li>
         <li><a href="login.php"><i class="fa-regular fa-user" style="color: #fff;"></i></a></li>
-        <li><a href="/"><i class="fa-solid fa-bag-shopping" style="color: #fff;"></i></a></li>
+        <li><a href="login.php"><i class="fa-solid fa-bag-shopping" style="color: #fff;"></i></a></li>
     </div> 
 </nav>   
 </body>
