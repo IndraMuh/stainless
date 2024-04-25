@@ -2,7 +2,6 @@
 
 $cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 
-// Menghitung jumlah barang dengan nama dan ukuran gambar yang sama
 $jumlah_barang_per_nama_dan_gambar = [];
 foreach ($cart as $item) {
     $key = $item['name'] . $item['i1'] . $item['size']; 
@@ -39,7 +38,6 @@ foreach ($cart as $key => $item) {
         echo "</div>";
         echo "</div>";
         
-        // Tandai nama, gambar, dan ukuran yang sudah ditampilkan
         $nama_barang_ditampilkan[$key_check] = true;
     }
 }

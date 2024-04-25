@@ -4,7 +4,7 @@ include "connect.php";
 $id = $_GET['id'];
 $size = $_GET['size'];
 
-// Membuat query berdasarkan ukuran yang dipilih
+
 if ($size == 'M') {
     $stockColumn = 'stockM';
 } elseif ($size == 'L') {
