@@ -9,6 +9,8 @@
 
 **Stainless** adalah aplikasi web e-commerce sederhana yang dirancang untuk menjual produk pakaian secara online. Dibangun menggunakan **PHP Native**, **HTML**, dan **CSS**, aplikasi ini mencakup fitur dasar seperti manajemen produk (CRUD), keranjang belanja, dan sistem checkout.
 
+![Logo Stainless](https://github.com/IndraMuh/stainless/blob/main/gambar/logo.png?raw=true)
+
 ---
 
 ## ✨ Fitur Utama
